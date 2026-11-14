@@ -8,7 +8,7 @@ bounty ($250 in USDC).
 
 ## The image
 
-`entry.png` (1024×1024, 275 KB) is a newsroom-style front page, **THE WORLD TODAY**,
+`entry.png` (1024×1024, 274 KB) is a newsroom-style front page, **THE WORLD TODAY**,
 drawn programmatically with flat editorial icons and short, legible labels —
 no garbled text, nothing invented. Six stories, verified against BBC News,
 Al Jazeera and Reuters reporting of 13 November 2026:

@@ -4,8 +4,11 @@
 # talks, a drone hitting a Russian warship, Iran's claimed strike on a US radar
 # in Bahrain, the FBI's $400M North Korea crypto-hack case, and Harry Kane's
 # England caps record - plus the day's other headlines in the footer strip.
-# Python 3.13, standard library only; deterministic (a plain file copy).
-# The output is byte-identical on every run: no timestamps, no randomness.
+# The image was drawn programmatically (PIL, flat editorial icons, no garbled
+# text) and regenerated on 14 November 2026 with the ship's waves moved clear
+# of the headline. Python 3.13, standard library only; deterministic (a plain
+# file copy). The output is byte-identical on every run: no timestamps, no
+# randomness.
 #
 # Outside the grader's container, MAKEFUN_OUTPUT_DIR stands in for /output:
 #   mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
@@ -19,4 +22,5 @@ OUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
 DST = os.path.join(OUT_DIR, "entry.png")
 
 os.makedirs(OUT_DIR, exist_ok=True)
+# copyfile preserves the bytes exactly: the judged image is entry.png itself.
 shutil.copyfile(SRC, DST)
